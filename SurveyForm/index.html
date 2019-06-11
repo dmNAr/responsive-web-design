@@ -1,18 +1,37 @@
 <html>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <main id="main">
-  <h1 id="title">Dr. Norman Borlaug</h1>
- <p id="description"></p>
+  <h1 id="title">Survey Form</h1>
+ <p id="description">Let us know how we can improve freeCodeCamp</p>
 
 
  <form id="survey-form" method="GET">
     <div class="rowTab">
-        <div class="Left">
-          <label id="name-left" for="name">* Name: </label>
+        <div class="Leftname">
+            <label id="name-left" for="name">* Name: </label>
         </div>
         <div class="rightTab">
-          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
         </div>
+    </div>
+
+    <div class="rowTab">
+        <div class="Leftemail">
+            <label id="email-left" for="email">* Email: </label>
+        </div>
+        <div class="rightTab">
+            <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+        </div>
+    </div>
+
+    <div class="rowTab">
+        <div class="Leftage">
+            <label id="number-left" for="age">* Age: </label>
+        </div>
+        <div class="rightTab">
+            <input autofocus type="number" name="age" id="number" min="1" max="99" class="input-field" placeholder="Age" required>
+        </div>   
+    </div> 
  </form>
 </main>
 </html>
